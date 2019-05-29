@@ -10,7 +10,7 @@ namespace DevFramework.Core.DataAccess.NHibernate
     public class NhQuerableRepository<T> : IQueryableRepository<T> where T : class, IEntity, new()
     {
         NHibernateHelper _nhibernateHelper;
-        IQueryable<T> _entities;
+        IQueryable<T> _entities;//oldu bu iş
 
         public NhQuerableRepository(NHibernateHelper nhibernateHelper)
         {
